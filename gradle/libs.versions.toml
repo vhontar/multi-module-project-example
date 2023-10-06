@@ -1,0 +1,8 @@
+[plugins]
+moduleGraphAssertion = "com.jraska.module.graph.assertion:2.5.0"
+
+[libraries]
+gradlePlugins-android = "com.android.tools.build:gradle:8.1.2"
+gradlePlugins-kotlin = "org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.10"
+
+androidx-appCompat = "androidx.appcompat:appcompat:1.6.1"
