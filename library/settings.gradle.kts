@@ -19,6 +19,8 @@ include(
     ":feature:home",
 )
 
+includeBuild("../gradle-plugins")
+
 dependencyResolutionManagement {
     versionCatalogs {
         create("libs") {

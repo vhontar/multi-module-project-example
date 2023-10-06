@@ -16,5 +16,4 @@ dependencyResolutionManagement {
 rootProject.name = "MultiModuleProjectExample"
 include(":app")
 includeBuild("library")
-
-// apply(from = "library/settings.gradle.kts")
+includeBuild("gradle-plugins")
