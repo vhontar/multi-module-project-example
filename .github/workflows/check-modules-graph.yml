@@ -31,4 +31,4 @@ jobs:
 
       - name: Check Modules Graph
         working-directory: ./library
-        run: ./gradlew licensee
+        run: ./gradlew assertModuleGraph
