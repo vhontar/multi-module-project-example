@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.vhontar.core.logger.Logger
 import com.vhontar.domain.logger.LogMessage
+import com.vhontar.feature.home.HomeFragment
 
 class LoginFragment: Fragment() {
     override fun onCreateView(
@@ -18,5 +19,12 @@ class LoginFragment: Fragment() {
             LogMessage(tag = "LoginFragment", message = "onCreateView")
         )
         return super.onCreateView(inflater, container, savedInstanceState)
+    }
+
+    private fun openHomePage() {
+        requireActivity().supportFragmentManager
+            .beginTransaction()
+            .add(HomeFragment(), "")
+            .commit()
     }
 }
